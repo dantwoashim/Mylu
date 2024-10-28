@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Card</title>
+  <style>
+    /* Body and Background Styling */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      overflow: hidden;
+    }
+
+    /* Card Container */
+    .card {
+      width: 400px;
+      padding: 30px;
+      border-radius: 15px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeIn 1.5s forwards ease-in-out;
+    }
+
+    /* Heading Styling */
+    .card h1 {
+      font-size: 2em;
+      color: #ff6699;
+      margin: 0;
+      animation: fadeText 2s ease-out forwards;
+    }
+
+    /* Heart Animation */
+    .heart {
+      color: #ff6699;
+      font-size: 2.5em;
+      margin: 20px 0;
+      animation: heartbeat 1.5s infinite alternate;
+    }
+
+    /* Message Styling */
+    .message {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #666666;
+      animation: fadeText 3s ease-out forwards;
+    }
+
+    /* Button Styling */
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #ff6699;
+      border: none;
+      border-radius: 50px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(255, 102, 153, 0.4);
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff5073;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeText {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Just for You</h1>
+    <div class="heart">&hearts;</div>
+    <p class="message">
+      In all the world, there’s no heart like yours, and in my life, there’s no light that shines as brightly. I am so grateful for every smile, every laugh, and every moment we share. Thank you for being you, you are my joy, my peace, and my forever.
+    </p>
+    <a href="#" class="btn">Always Yours</a>
+  </div>
+</body>
+</html>
